@@ -1,4 +1,4 @@
-# globo_fitness
+# DV fitness
 
 A new Flutter project.
 
