@@ -69,9 +69,9 @@ class Session {
   }
 }
  ```
- In the `sp_helper.dart` file we import the *shared_preferences* from the `pubspec.yaml` to be able to share data between files
+ In the `sp_helper.dart` file we import the *shared_preferences* from the `pubspec.yaml` to be able to share data between files.
  
-  In the `weather.dart` file we get the weather data retrieved from the api
+ In the `weather.dart` file we get the weather data retrieved from the api.
   
   ```dart
 class Weather {
@@ -171,7 +171,7 @@ Furthermore we created a widget so the user can input the required infromation t
     );
   }
 ```
-Finally we define the formulas the app will use to calculate the users BMI
+Finally we define the formulas the app will use to calculate the users BMI.
 ```dart
    void findBMI() {
     double bmi = 0;
@@ -189,7 +189,7 @@ Finally we define the formulas the app will use to calculate the users BMI
   }
 }
 ```
-In the `intro_screen.dart` file we set up the homescreen of the app including the app bar, menu drawer, background image, and motivational text for the user
+In the `intro_screen.dart` file we set up the homescreen of the app including the app bar, menu drawer, background image, and motivational text for the user.
 
 ```dart
 class IntroScreen extends StatelessWidget {
@@ -327,7 +327,7 @@ class MenuBottom extends StatelessWidget {
   }
 }
 ```
-In the `menu_drawer.dart` we create the drawer on the upper left of the app where the user can access the features like: "Home", "BMI Calculator", "Weather", "Training"
+In the `menu_drawer.dart` we create the drawer on the upper left of the app where the user can access the features like: "Home", "BMI Calculator", "Weather" and "Training".
 ```dart
 class MenuDrawer extends StatelessWidget {
   const MenuDrawer({Key? key}) : super(key: key);
