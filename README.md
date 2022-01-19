@@ -13,16 +13,16 @@ This is an app written in Dart using Flutter. As it was written in Fulutter the 
 ![A0C90033-596F-4529-9F59-72B864A7A2A9](https://user-images.githubusercontent.com/54951169/150210218-078c7d44-0675-4ac5-a7d6-68dd13416070.jpeg)
 ![1A8ABC0C-6BFA-457C-8F5B-F2A719D81391](https://user-images.githubusercontent.com/54951169/150210224-d6539a2b-6bc0-4deb-a17d-dcde01a40518.jpeg)
 
-## App demo
+## App demo:
 https://user-images.githubusercontent.com/54951169/150196915-280a6cd6-081e-42ab-b5d9-2c9dc70d196d.MP4
 
-## Topic covered in this app
+## Topic covered in this app:
 * stateful and stateless widgets
 * adding navidation
 * retrieving data from a web service
 * persisting data localy
 
-## Brief code explanation
+## Brief code explanation:
 The code is organised into multiple funcional folders. Flutter creates all the folders needed. Amongst which the iOS and Android folder we use to build the project for the respective platform. We edit the code in the lib folder where we created the next subfolders:
 * `data`
 * `screens`
