@@ -6,7 +6,7 @@ Flutter is Google's UI toolkit for building beautiful, natively compiled applica
 ## About this app:
 This is an app written in Dart using Flutter. As it was written in Fulutter the app was tested in a browser, iOS device, and Android device. A demo of the apps functionality is showcased in the demo below.
 
-## App images
+## App images:
 ![E1118463-32D5-4A91-8E8D-7F90611C7D94](https://user-images.githubusercontent.com/54951169/150210140-b84b9a54-cefb-4c35-8171-b9b0440ea10b.jpeg)
 ![DB82D629-6BF0-40F2-9379-F6CA34A63595](https://user-images.githubusercontent.com/54951169/150210164-56055343-aae9-4635-aab5-ebecdfcc4a29.jpeg)
 ![E9C92351-423E-4B69-9AE1-E4B0722DF41B](https://user-images.githubusercontent.com/54951169/150210199-319037d4-6ef9-4186-ab47-ea80fcbf6bcd.jpeg)
