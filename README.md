@@ -26,8 +26,7 @@ In the `helper.dart` file we define the parameters to connect to an external api
 
 ```dart
 class HttpHelper {
-  //http://api.openweathermap.org/data/2.5/weather?q=split&appid=70f4aaedc2d5281a2310091bd0e01203
-  final String authority = 'api.openweathermap.org';
+   final String authority = 'api.openweathermap.org';
   final String path = 'data/2.5/weather';
   final String apiKey = '70f4aaedc2d5281a2310091bd0e01203';
 
@@ -42,4 +41,59 @@ class HttpHelper {
   }
   ```
 
-In the ses
+In the `sesion.dart` file we defined the properties for creating and saving workout sessions.
+
+```dart
+class Session {
+  int id = 0;
+  String date = '';
+  String description = '';
+  int duration = 0;
+
+  Session(this.id, this.date, this.description, this.duration);
+
+  Session.fromJson(Map<String, dynamic> sessionMap) {
+    id = sessionMap['id'] ?? 0;
+    date = sessionMap['date'] ?? '';
+    description = sessionMap['description'] ?? '';
+    duration = sessionMap['duration'] ?? 0;
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'date': date,
+      'description': description,
+      'duration': duration,
+    };
+  }
+}
+ ```
+ In the `sp_helper.dart` file we import the shared_preferences from the pubspec.yaml to be able to share data between files
+ 
+  In the `weather.dart` file we get the weather data retrieved from the api
+  
+  ```dart
+class Weather {
+  String name = '';
+  String description = '';
+  double temperature = 0;
+  double perceived = 0;
+  int pressure = 0;
+  int humidity = 0;
+
+  Weather(this.name, this.description, this.temperature, this.perceived, this.pressure,
+      this.humidity);
+
+  Weather.fromJson(Map<String, dynamic> weatherMap) {
+    this.name = weatherMap['name'];
+    this.temperature = (weatherMap['main']['temp'] - 273.15) ?? 0;
+    this.perceived = (weatherMap['main']['feels_like'] - 273.15) ?? 0;
+    this.pressure = weatherMap['main']['pressure'] ?? 0;
+    this.humidity = weatherMap['main']['humidity'] ?? 0;
+    this.description = weatherMap['weather'][0]['main'] ?? '';
+  }
+}
+```
+## screens
+
