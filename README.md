@@ -16,7 +16,7 @@ https://user-images.githubusercontent.com/54951169/150196915-280a6cd6-081e-42ab-
 
 ## Brief code explanation
 
-The code is organised into funcional folders which are:
+The code is organised into multiple funcional folders. Flutter creates all the folders needed. Amongst which the iOS and Android folder we use to build the project for the respective platform. We edit the code in the lib folder where we created the next subfolders:
 * `data`
 * `screens`
 * `shared`
@@ -69,7 +69,7 @@ class Session {
   }
 }
  ```
- In the `sp_helper.dart` file we import the shared_preferences from the pubspec.yaml to be able to share data between files
+ In the `sp_helper.dart` file we import the *shared_preferences* from the `pubspec.yaml` to be able to share data between files
  
   In the `weather.dart` file we get the weather data retrieved from the api
   
