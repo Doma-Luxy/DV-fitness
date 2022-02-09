@@ -74,7 +74,7 @@ class _SessionsScreenState extends State<SessionsScreen> {
 
   Future saveSession() async {
     DateTime now = DateTime.now();
-    String today = '${now.year}-${now.month}-${now.day}';
+    String today = '${now.day}/${now.month}/${now.year}';
     int id = helper.getCounter() + 1;
     Session newSession = Session(
         id, today, txtDescription.text, int.tryParse(txtDuration.text) ?? 0);
